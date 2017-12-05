@@ -24,8 +24,8 @@ module.exports = {
       use: 'babel-loader',
       exclude: /node_modules/
     }, {
-      test: /\.({{#less}}less|{{/less}}css)$/,
-      use: ['style-loader', 'css-loader'{{#less}}, 'less-loader'{{/less}}]
+      test: /\.({%#less%}less|{%/less%}css)$/,
+      use: ['style-loader', 'css-loader'{%#less%}, 'less-loader'{%/less%}]
     }, {
       test: /\.(svg|ttf|eot|svg|woff(\(?2\)?)?)(\?[a-zA-Z_0-9.=&]*)?(#[a-zA-Z_0-9.=&]*)?$/,
       use: 'file-loader'

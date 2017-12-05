@@ -15,20 +15,19 @@ class Index extends Component {
   }
 
   render () {
-    const menuStyle = {
-      top: 0,
-      bottom: 0,
-      width: 200,
-      marginTop: 60,
-      position: 'fixed',
-      overflowY: 'auto'
-    }
     return (
       <div>
         <Header />
         <Menu
           openAll
-          style={menuStyle}
+          style={{
+            top: 0,
+            bottom: 0,
+            width: 200,
+            marginTop: 60,
+            position: 'fixed',
+            overflowY: 'auto'
+          }}
         >
           <MenuItem>选项1</MenuItem>
           <MenuItem>选项2</MenuItem>
