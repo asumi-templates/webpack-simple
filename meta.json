@@ -9,7 +9,7 @@
       "type": "string",
       "required": true,
       "label": "Project description",
-      "default": "A asumi admin project"
+      "default": "A asumi project"
     },
     "author": {
       "type": "string",
